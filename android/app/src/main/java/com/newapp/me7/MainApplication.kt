@@ -1,4 +1,4 @@
-package com.salus
+package com.newapp.me7
 
 import android.app.Application
 import com.facebook.react.PackageList
