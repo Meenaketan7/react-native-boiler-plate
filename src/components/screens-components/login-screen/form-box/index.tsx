@@ -18,7 +18,12 @@ const FormBox = () => {
 	return (
 		<View style={styles.formBox}>
 			<View style={styles.logoWrapper}>
-				<Image source={IMAGES?.Login?.default?.LOGO} alt='logo' style={styles.logo} />
+				<Image
+					source={IMAGES?.Login?.default?.LOGO}
+					alt='logo'
+					style={styles.logo}
+					resizeMode='cover'
+				/>
 			</View>
 			<VStack space='md'>
 				<Text

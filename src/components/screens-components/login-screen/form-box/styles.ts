@@ -20,7 +20,6 @@ export const styles = StyleSheet.create({
 		position: 'absolute',
 		alignSelf: 'center',
 		top: -25,
-		backgroundColor: 'white',
 		padding: 6,
 		borderRadius: 9999,
 		zIndex: 10,

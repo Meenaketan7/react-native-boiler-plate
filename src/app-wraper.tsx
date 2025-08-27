@@ -7,13 +7,14 @@ import ReduxProvider from './store/redux';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { queryClient } from './configs/query-cliend';
 import useNavigationState from './store/zustand/navigation-state';
+import ThemeProvider from './theme/ThemeProvider';
 
 const AppWrapper = () => {
 	const { setNavigationIsReady } = useNavigationState();
 	return (
 		<GestureHandlerRootView>
 			<SafeAreaProvider>
-				<GluestackUIProvider mode='light'>
+				<ThemeProvider>
 					<NavigationContainer
 						onReady={() => {
 							console.log('✅ Navigation is ready');
@@ -25,7 +26,7 @@ const AppWrapper = () => {
 							</QueryClientProvider>
 						</ReduxProvider>
 					</NavigationContainer>
-				</GluestackUIProvider>
+				</ThemeProvider>
 			</SafeAreaProvider>
 		</GestureHandlerRootView>
 	);

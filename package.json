@@ -9,6 +9,7 @@
 		"start": "react-native start -- --reset-cache",
 		"gradlew:clean": "cd android && ./gradlew clean && cd ..",
 		"pod:remove": "cd ios && pod deintegrate && cd ..",
+		"pod:install": "cd ios && pod install && cd ..",
 		"stop:ios-emulator": "cd ios && xcrun simctl shutdown all  && cd ..",
 		"apk-release": "cd android && ./gradlew assembleRelease && cd ..",
 		"aab-release": "cd android && ./gradlew bundleRelease && cd ..",
